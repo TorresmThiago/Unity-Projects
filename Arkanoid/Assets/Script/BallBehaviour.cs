@@ -45,7 +45,6 @@ public class BallBehaviour : MonoBehaviour
         if (Mathf.Abs(currentSpeed.y) > speedLimit.y)
         {
             float speedDiference = (Mathf.Abs(currentSpeed.y) - speedLimit.y) * isYPositive;
-            Debug.Log(speedDiference);
             rigidbody.AddForce(new Vector2(0, speedDiference));
         }
     }
