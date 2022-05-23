@@ -6,3 +6,4 @@
 ### Developed games so far:
 
 * [Arkanoid](Arkanoid)
+* [Snake](Snake)
