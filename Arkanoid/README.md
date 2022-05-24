@@ -7,7 +7,10 @@
 
 ### Studied Concepts: 
 
-* Using a simple 2D project, rigidbody physics components were added to gameObjects to interact with colliders. Player input was detected to move the paddle left and right, as well to start the game 
+* Using a simple 2D project, rigidbody physics components were added to gameObjects to interact with colliders. 
+* Player input was detected to move the paddle left and right, as well to start the game
+* Instantiated a dynamic grid of blocks from a GameController
+* Used GameObject tags to validate the collision of the ball with other transforms    
 
 
 ### Possible TODO features:  
