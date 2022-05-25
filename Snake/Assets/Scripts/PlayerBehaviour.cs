@@ -6,19 +6,19 @@ public class PlayerBehaviour : MonoBehaviour
 {
     public int stepDistance;
     private string direction;
+    private string lastDirection;
 
     void Start()
     {
-        direction = "";
-        StartCoroutine(playerMovement());
+        StartCoroutine(PlayerMovement());
     }
 
-    void Update()
+    void Update()   
     {
-        playerDirection();
+        PlayerDirection();
     }
 
-    void playerDirection()
+    void PlayerDirection()
     {
 
         if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
@@ -43,7 +43,7 @@ public class PlayerBehaviour : MonoBehaviour
         }
     }
 
-    IEnumerator playerMovement()
+    IEnumerator PlayerMovement()
     {
         yield return new WaitForSeconds(1);
 
@@ -63,7 +63,7 @@ public class PlayerBehaviour : MonoBehaviour
                 break;
             default: break;
         }
-
-        StartCoroutine(playerMovement());
+        lastDirection = direction;
+        StartCoroutine(PlayerMovement());
     }
 }
