@@ -11,7 +11,9 @@ public class Tile : MonoBehaviour
     [SerializeField]
     private SpriteRenderer _renderer;
 
-    public void Init(bool isOffset){
+    public void Init(bool isOffset)
+    {
         _renderer.color = isOffset ? _offsetColor : _baseColor;
     }
+
 }

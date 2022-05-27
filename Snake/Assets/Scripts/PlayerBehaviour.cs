@@ -1,19 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
+
 
 public class PlayerBehaviour : MonoBehaviour
 {
-    public int stepDistance;
-    private string direction;
-    private string lastDirection;
+    private string _direction;
+    private GameObject _gridManager;
 
     void Start()
     {
+        _gridManager = GameObject.FindGameObjectWithTag("GridManager");
         StartCoroutine(PlayerMovement());
     }
 
-    void Update()   
+    void Update()
     {
         PlayerDirection();
     }
@@ -23,47 +25,62 @@ public class PlayerBehaviour : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
         {
-            direction = "up";
+            _direction = "up";
             transform.eulerAngles = Vector3.forward * 180;
         }
         else if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
         {
-            direction = "left";
+            _direction = "left";
             transform.eulerAngles = Vector3.forward * 270;
         }
         else if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
         {
-            direction = "right";
+            _direction = "right";
             transform.eulerAngles = Vector3.forward * 90;
         }
         else if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
         {
-            direction = "down";
+            _direction = "down";
             transform.eulerAngles = Vector3.forward * 0;
         }
     }
 
     IEnumerator PlayerMovement()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(.75f);
 
-        switch (direction)
+        switch (_direction)
         {
             case ("up"):
-                transform.position = transform.position + Vector3.up;
+                Move(Vector2.up);
                 break;
             case ("left"):
-                transform.position = transform.position + Vector3.left;
+                Move(Vector2.left);
                 break;
             case ("right"):
-                transform.position = transform.position + Vector3.right;
+                Move(Vector2.right);
                 break;
             case ("down"):
-                transform.position = transform.position + Vector3.down;
+                Move(Vector2.down);
                 break;
             default: break;
         }
-        lastDirection = direction;
+        //_lastDirection = _direction;
         StartCoroutine(PlayerMovement());
+    }
+
+    void Move(Vector2 movement)
+    {
+        string[] parentName = transform.parent.name.Split('_');
+        Vector2 currentTilePosition = new Vector2(Int32.Parse(parentName[1]), Int32.Parse(parentName[2]));
+
+        Vector2 newPosition = currentTilePosition + movement;
+        Tile nextTile = _gridManager.GetComponent<GridManager>().GetTileAtPosition(newPosition);
+        if (nextTile != null)
+        {
+            transform.position = new Vector3(nextTile.transform.position.x, nextTile.transform.position.y, -1);
+            transform.parent = nextTile.transform;
+        }
+
     }
 }
