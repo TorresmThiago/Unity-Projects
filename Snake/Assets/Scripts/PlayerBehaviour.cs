@@ -8,8 +8,11 @@ using System;
 public class PlayerBehaviour : MonoBehaviour
 {
 
-    public static event Action OnEatCarrot;
     private string _currentDirection;
+
+    public Body body;
+
+    public static event Action OnEatCarrot;
 
     void Start()
     {
@@ -60,11 +63,17 @@ public class PlayerBehaviour : MonoBehaviour
 
         if (nextTile != null)
         {
+            body.Move(transform.position);
+
             transform.position = new Vector3(nextTile.transform.position.x, nextTile.transform.position.y, -1);
             transform.parent = nextTile.transform;
             transform.eulerAngles = Vector3.forward * angles;
 
             if (nextTile.hasCarrot) OnEatCarrot.Invoke();
+        }
+        else
+        {
+            Debug.Log("TODO: Game Over!");
         }
 
     }
