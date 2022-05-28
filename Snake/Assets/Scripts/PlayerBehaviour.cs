@@ -1,85 +1,66 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using System;
 
 
 public class PlayerBehaviour : MonoBehaviour
 {
-    private string _direction;
-    private GameObject _gridManager;
+    private string _currentDirection;
 
     void Start()
     {
-        _gridManager = GameObject.FindGameObjectWithTag("GridManager");
         StartCoroutine(PlayerMovement());
     }
 
     void Update()
     {
-        PlayerDirection();
-    }
+        var keyboard = Keyboard.current;
 
-    void PlayerDirection()
-    {
-
-        if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
-        {
-            _direction = "up";
-            transform.eulerAngles = Vector3.forward * 180;
-        }
-        else if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
-        {
-            _direction = "left";
-            transform.eulerAngles = Vector3.forward * 270;
-        }
-        else if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
-        {
-            _direction = "right";
-            transform.eulerAngles = Vector3.forward * 90;
-        }
-        else if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
-        {
-            _direction = "down";
-            transform.eulerAngles = Vector3.forward * 0;
-        }
+        if (keyboard.upArrowKey.wasPressedThisFrame) _currentDirection = "up";
+        if (keyboard.leftArrowKey.wasPressedThisFrame) _currentDirection = "left";
+        if (keyboard.rightArrowKey.wasPressedThisFrame) _currentDirection = "right";
+        if (keyboard.downArrowKey.wasPressedThisFrame) _currentDirection = "down";
     }
 
     IEnumerator PlayerMovement()
     {
         yield return new WaitForSeconds(.75f);
 
-        switch (_direction)
+        switch (_currentDirection)
         {
             case ("up"):
-                Move(Vector2.up);
+                Move(Vector2.up, 180);
                 break;
             case ("left"):
-                Move(Vector2.left);
+                Move(Vector2.left, 270);
                 break;
             case ("right"):
-                Move(Vector2.right);
+                Move(Vector2.right, 90);
                 break;
             case ("down"):
-                Move(Vector2.down);
+                Move(Vector2.down, 0);
                 break;
             default: break;
         }
-        //_lastDirection = _direction;
+
         StartCoroutine(PlayerMovement());
     }
 
-    void Move(Vector2 movement)
+    void Move(Vector2 direction, int angles)
     {
         string[] parentName = transform.parent.name.Split('_');
         Vector2 currentTilePosition = new Vector2(Int32.Parse(parentName[1]), Int32.Parse(parentName[2]));
 
-        Vector2 newPosition = currentTilePosition + movement;
-        Tile nextTile = _gridManager.GetComponent<GridManager>().GetTileAtPosition(newPosition);
+        Vector2 newPosition = currentTilePosition + direction;
+        Tile nextTile = GridManager.Instance.GetTileAtPosition(newPosition);
+
         if (nextTile != null)
         {
             transform.position = new Vector3(nextTile.transform.position.x, nextTile.transform.position.y, -1);
             transform.parent = nextTile.transform;
+            transform.eulerAngles = Vector3.forward * angles;
         }
 
     }

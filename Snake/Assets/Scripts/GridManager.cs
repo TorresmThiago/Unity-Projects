@@ -5,6 +5,8 @@ using UnityEngine;
 public class GridManager : MonoBehaviour
 {
 
+    public static GridManager Instance;
+
     [SerializeField]
     private int _gridWidth, _gridHeight;
 
@@ -17,6 +19,11 @@ public class GridManager : MonoBehaviour
     private Dictionary<Vector2, Tile> _tiles;
 
     public GameObject player;
+
+    private void Awake()
+    {
+        Instance = this;
+    }
 
     void Start()
     {
