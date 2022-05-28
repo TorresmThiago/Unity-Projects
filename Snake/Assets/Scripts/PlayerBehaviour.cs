@@ -7,6 +7,8 @@ using System;
 
 public class PlayerBehaviour : MonoBehaviour
 {
+
+    public static event Action OnEatCarrot;
     private string _currentDirection;
 
     void Start()
@@ -61,6 +63,8 @@ public class PlayerBehaviour : MonoBehaviour
             transform.position = new Vector3(nextTile.transform.position.x, nextTile.transform.position.y, -1);
             transform.parent = nextTile.transform;
             transform.eulerAngles = Vector3.forward * angles;
+
+            if (nextTile.hasCarrot) OnEatCarrot.Invoke();
         }
 
     }

@@ -159,7 +159,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.75294125, g: 0.75294125, b: 0.75294125, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -240,6 +240,7 @@ MonoBehaviour:
   _tile: {fileID: 321229473527810417, guid: de25a2f351da4d94e9cdf0460532fade, type: 3}
   _cameraTransform: {fileID: 519420032}
   player: {fileID: 1047321725}
+  carrot: {fileID: 4808345195390996865, guid: 8a5a9919a71352347b9a5cdf911687be, type: 3}
 --- !u!4 &575164534
 Transform:
   m_ObjectHideFlags: 0
