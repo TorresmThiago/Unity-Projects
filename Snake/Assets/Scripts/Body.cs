@@ -5,22 +5,30 @@ using UnityEngine;
 
 public class Body : MonoBehaviour
 {
+    [SerializeField]
+    private Body _body;
 
-    private bool isTail;
+    private Body nextBodyPart;
 
-    public void Move(Vector3 position)
+    private void OnEnable()
     {
-        transform.position = position;
+        PlayerBehaviour.OnEatCarrot += IncreaseBody;
     }
 
-    // UPDATE POSITION
-    //  move function
-    //  variable object following
-    //  get diference on last position and new position to determine direction
-    // 
+    private void IncreaseBody()
+    {
+        PlayerBehaviour.OnEatCarrot -= IncreaseBody;
+        Debug.Log("Just got bigger");
+        nextBodyPart = Instantiate(_body, transform.position, Quaternion.identity);
+    }
 
-    // INSTANTIATE NEXT BODY OBJECT
-    //  Listen to eatCarrot Event
-    //  if the body part is tail, instantiate next based on this.position
+    public void MoveBodyPart(Vector3 position)
+    {
+        if (nextBodyPart != null)
+        {
+            nextBodyPart.MoveBodyPart(transform.position);
+        }
 
+        transform.position = position;
+    }
 }

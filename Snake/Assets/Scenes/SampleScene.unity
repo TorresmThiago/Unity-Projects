@@ -223,6 +223,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc604d08869b2af41a98de32d92a7df6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nextBodyPart: {fileID: 553046258}
 --- !u!1 &575164532
 GameObject:
   m_ObjectHideFlags: 0
@@ -336,6 +337,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 2530791767111803626, guid: a431426062a0d064abc11eb53aee0279, type: 3}
+      propertyPath: body
+      value: 
+      objectReference: {fileID: 553046258}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a431426062a0d064abc11eb53aee0279, type: 3}
 --- !u!1001 &5251871453749620638
