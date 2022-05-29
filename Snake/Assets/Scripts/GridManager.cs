@@ -18,7 +18,7 @@ public class GridManager : MonoBehaviour
 
     private Dictionary<Vector2, Tile> _tiles;
 
-    public GameObject player;
+    public PlayerBehaviour player;
 
     public GameObject carrot;
 
@@ -64,6 +64,7 @@ public class GridManager : MonoBehaviour
                 {
                     player.transform.position = (Vector2)spawnedTile.transform.position;
                     player.transform.parent = spawnedTile.transform;
+                    player.body.MoveBodyPart(player.transform);
                 }
             }
         }

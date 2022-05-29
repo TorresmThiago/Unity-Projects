@@ -5,9 +5,6 @@ using UnityEngine;
 
 public class Body : MonoBehaviour
 {
-    [SerializeField]
-    private Body _body;
-
     private Body nextBodyPart;
 
     private void OnEnable()
@@ -18,17 +15,18 @@ public class Body : MonoBehaviour
     private void IncreaseBody()
     {
         PlayerBehaviour.OnEatCarrot -= IncreaseBody;
-        Debug.Log("Just got bigger");
-        nextBodyPart = Instantiate(_body, transform.position, Quaternion.identity);
+        nextBodyPart = Instantiate(this, transform.position, transform.rotation, transform.parent);
     }
 
-    public void MoveBodyPart(Vector3 position)
+    public void MoveBodyPart(Transform previousBodyPart)
     {
         if (nextBodyPart != null)
         {
-            nextBodyPart.MoveBodyPart(transform.position);
+            nextBodyPart.MoveBodyPart(transform);
         }
 
-        transform.position = position;
+        transform.rotation = previousBodyPart.rotation;
+        transform.position = previousBodyPart.position;
+        transform.parent = previousBodyPart.parent;
     }
 }

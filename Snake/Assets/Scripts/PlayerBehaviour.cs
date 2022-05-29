@@ -16,7 +16,6 @@ public class PlayerBehaviour : MonoBehaviour
 
     void Start()
     {
-        body.MoveBodyPart(transform.position - Vector3.up);
         StartCoroutine(PlayerMovement());
     }
 
@@ -64,7 +63,7 @@ public class PlayerBehaviour : MonoBehaviour
 
         if (nextTile != null)
         {
-            body.MoveBodyPart(transform.position);
+            body.MoveBodyPart(transform);
 
             transform.position = new Vector3(nextTile.transform.position.x, nextTile.transform.position.y, -1);
             transform.parent = nextTile.transform;
