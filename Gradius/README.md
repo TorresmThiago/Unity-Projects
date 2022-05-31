@@ -7,7 +7,7 @@
 
 ### Studied Concepts: 
 
-* 
+* Use of transform.Translate to apply movement to player
 
 
 ### Possible TODO features:  

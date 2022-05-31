@@ -7,22 +7,45 @@ public class Player : MonoBehaviour
 {
 
     [SerializeField]
-    private float _speed;
+    private float speed;
+
+    [SerializeField]
+    private Shoot shoot;
+
 
     private float verticalInput;
     private float horizontalInput;
+    private bool inCooldown;
 
     void Update()
     {
-        PlayerMovement();
+        Movement();
+        Action();
     }
 
-    private void PlayerMovement()
+
+    private void Action()
+    {
+        if (Input.GetKey("space") && !inCooldown)
+        {
+            Instantiate(shoot, transform.position, Quaternion.identity);
+            inCooldown = true;
+            StartCoroutine(ShootCooldown());
+        }
+    }
+
+    IEnumerator ShootCooldown()
+    {
+        yield return new WaitForSeconds(.25f);
+        inCooldown = false;
+    }
+
+    private void Movement()
     {
         horizontalInput = Input.GetAxisRaw("Horizontal");
         verticalInput = Input.GetAxisRaw("Vertical");
         Vector3 direction = new Vector3(horizontalInput, verticalInput, 0);
 
-        transform.Translate(direction * Time.deltaTime * _speed, Space.World);
+        transform.Translate(direction * Time.deltaTime * speed, Space.World);
     }
 }
