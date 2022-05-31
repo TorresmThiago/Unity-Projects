@@ -20,24 +20,9 @@ public class Player : MonoBehaviour
     private void PlayerMovement()
     {
         horizontalInput = Input.GetAxisRaw("Horizontal");
-        Vector3 directionX = new Vector3(0, 0, 0);
-
         verticalInput = Input.GetAxisRaw("Vertical");
-        Vector3 directionY = new Vector3(0, 0, 0);
+        Vector3 direction = new Vector3(horizontalInput, verticalInput, 0);
 
-        if (horizontalInput == 1)
-            directionX = Vector3.right;
-        else if (horizontalInput == -1)
-            directionX = Vector3.left;
-
-        if (verticalInput == 1)
-            directionY = Vector3.up;
-        else if (verticalInput == -1)
-            directionY = Vector3.down;
-
-        transform.Translate(directionX * Time.deltaTime * _speed, Space.World);
-        transform.Translate(directionY * Time.deltaTime * _speed, Space.World);
-
-
+        transform.Translate(direction * Time.deltaTime * _speed, Space.World);
     }
 }
