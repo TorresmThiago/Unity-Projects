@@ -8,6 +8,7 @@
 ### Studied Concepts: 
 
 * Use of transform.Translate to apply movement to player
+* Tags to identify collision with instantiated prefabs, such as the shoot
 
 
 ### Possible TODO features:  
