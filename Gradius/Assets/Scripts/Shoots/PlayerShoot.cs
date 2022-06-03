@@ -19,12 +19,4 @@ public class PlayerShoot : Shoot
             Destroy(gameObject);
         }
     }
-
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.transform.tag == "Enemy")
-        {
-            Destroy(gameObject);
-        }
-    }
 }

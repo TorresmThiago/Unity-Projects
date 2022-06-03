@@ -12,6 +12,7 @@
 * Tags to identify collision with instantiated prefabs, such as the shoot
 * Use of prefab variants to create diferent enemies/shoots
 * Inheritance scripts with virtual/override functions 
+* Use of Enum to define shooter/target
 
 
 ### Possible TODO features:  
