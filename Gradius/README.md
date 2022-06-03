@@ -7,8 +7,11 @@
 
 ### Studied Concepts: 
 
-* Use of transform.Translate to apply movement to player
+* Use of transform.Translate() to apply movement to player
+* Use of Vector3 functions: Lerp(), Distance()
 * Tags to identify collision with instantiated prefabs, such as the shoot
+* Use of prefab variants to create diferent enemies/shoots
+* Inheritance scripts with virtual/override functions 
 
 
 ### Possible TODO features:  

@@ -24,9 +24,19 @@ public class Enemy : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.transform.tag == "Shoot")
+        if (TryGetComponent(out PlayerShoot shoot))
         {
-            Destroy(gameObject);
+            Debug.Log(shoot.shooter);
         }
+        else
+        {
+            Debug.Log("Ahn...");
+        }
+
+        // if (other.transform.tag == "Shoot")
+        // {
+        //     Destroy(gameObject);
+        // }
     }
+
 }
