@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ShooterEnemy : MonoBehaviour
+public class ShooterEnemy : Enemy
 {
 
     //Code from Unity Documentation in order to learn about Linear Interpolation
@@ -13,8 +13,6 @@ public class ShooterEnemy : MonoBehaviour
     public Vector3 startPosition;
     public Vector3 endPosition;
 
-    public float speed = 1.0F;
-
     private float startTime;
     private float distance;
     private float distCovered;
@@ -22,13 +20,13 @@ public class ShooterEnemy : MonoBehaviour
 
     void Start()
     {
+        speed = 1f;
         startTime = Time.time;
         distance = Vector3.Distance(startPosition, endPosition);
         StartCoroutine(EnemyShoot());
     }
 
-
-    void Update()
+    public override void EnemyMovement()
     {
         if (fractionOfJourney <= 1)
         {
@@ -40,7 +38,7 @@ public class ShooterEnemy : MonoBehaviour
 
     IEnumerator EnemyShoot()
     {
-        yield return new WaitForSeconds(.25f);
+        yield return new WaitForSeconds(1.25f);
         if (transform.position.x <= endPosition.x)
         {
             Instantiate(shoot, transform.position, Quaternion.identity);

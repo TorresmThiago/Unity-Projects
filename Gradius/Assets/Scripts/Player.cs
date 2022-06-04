@@ -19,12 +19,12 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        Movement();
-        Action();
+        PlayerMovement();
+        PlayerAction();
     }
 
 
-    private void Action()
+    private void PlayerAction()
     {
         if (Input.GetKey("space") && !inCooldown)
         {
@@ -40,7 +40,7 @@ public class Player : MonoBehaviour
         inCooldown = false;
     }
 
-    private void Movement()
+    private void PlayerMovement()
     {
         horizontalInput = Input.GetAxisRaw("Horizontal");
         verticalInput = Input.GetAxisRaw("Vertical");

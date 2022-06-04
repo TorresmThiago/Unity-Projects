@@ -8,7 +8,7 @@ public class EnemyShoot : Shoot
     {
         direction = Vector3.left;
         destroyPosition = -15f;
-        speed = 10f;
+        speed = 5f;
         shooter = Shooter.Enemy;
     }
 
