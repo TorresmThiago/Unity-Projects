@@ -13,6 +13,7 @@
 * Use of prefab variants to create diferent enemies/shoots
 * Inheritance scripts with virtual/override functions 
 * Use of Enum to define shooter/target
+* Using the Mathf lib to create enemy moviment with sin() and cos()
 
 
 ### Possible TODO features:  
