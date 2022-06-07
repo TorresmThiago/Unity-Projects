@@ -4,15 +4,26 @@ using UnityEngine;
 
 public class BackStabEnemy : Enemy
 {
-    // Start is called before the first frame update
-    void Start()
-    {
 
+    float t;
+
+    private void Start()
+    {
+        speed = 100f;
     }
 
-    // Update is called once per frame
-    void Update()
+
+    public override void EnemyMovement()
     {
+        float currentSpeed = speed * Mathf.Lerp(0, 1, t);
+        t += 0.0125f * Time.deltaTime;
+
+        transform.Translate(Vector3.right * Time.deltaTime * currentSpeed, Space.World);
+        if (transform.position.x > 15)
+        {
+            Destroy(gameObject);
+        }
+
 
     }
 }
