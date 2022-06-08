@@ -6,19 +6,21 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
 
-    [SerializeField]
-    private float speed;
 
     [SerializeField]
     private Shoot shoot;
 
+    [SerializeField]
+    private float widthOffset, heightOffset;
 
+    private float speed;
     private float verticalInput;
     private float horizontalInput;
     private bool inCooldown;
 
     void Update()
     {
+        speed = 4f;
         PlayerMovement();
         PlayerAction();
     }
@@ -44,8 +46,20 @@ public class Player : MonoBehaviour
     {
         horizontalInput = Input.GetAxisRaw("Horizontal");
         verticalInput = Input.GetAxisRaw("Vertical");
-        Vector3 direction = new Vector3(horizontalInput, verticalInput, 0);
 
+        if ((horizontalInput == 1 && transform.position.x >= 8.3f)
+          || horizontalInput == -1 && transform.position.x <= -8.3f)
+        {
+            horizontalInput = 0;
+        }
+
+        if ((verticalInput == 1 && transform.position.y >= 4.3f)
+        || verticalInput == -1 && transform.position.y <= -4.3f)
+        {
+            verticalInput = 0;
+        }
+
+        Vector3 direction = new Vector3(horizontalInput, verticalInput, 0);
         transform.Translate(direction * Time.deltaTime * speed, Space.World);
     }
 }
