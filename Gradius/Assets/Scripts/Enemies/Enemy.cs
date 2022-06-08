@@ -12,6 +12,15 @@ public class Enemy : MonoBehaviour
 
     public virtual void EnemyAction() { }
 
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.transform.tag == "Player")
+        {
+            Destroy(other.gameObject);
+            Destroy(gameObject);
+        }
+    }
+
     void Update()
     {
         EnemyMovement();
