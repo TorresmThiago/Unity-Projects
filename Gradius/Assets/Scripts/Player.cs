@@ -6,12 +6,8 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
 
-
     [SerializeField]
     private Shoot shoot;
-
-    [SerializeField]
-    private float widthOffset, heightOffset;
 
     private float speed;
     private float verticalInput;
