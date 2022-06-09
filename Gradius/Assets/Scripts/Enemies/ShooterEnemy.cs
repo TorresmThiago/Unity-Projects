@@ -20,8 +20,10 @@ public class ShooterEnemy : Enemy
 
     void Start()
     {
-        speed = 1f;
+        speed = 1.5f;
         startTime = Time.time;
+        startPosition = new Vector3(startPosition.x, transform.position.y);
+        endPosition = new Vector3(endPosition.x, transform.position.y);
         distance = Vector3.Distance(startPosition, endPosition);
         StartCoroutine(EnemyShoot());
     }

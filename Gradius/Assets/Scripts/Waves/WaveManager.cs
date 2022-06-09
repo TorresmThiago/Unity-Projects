@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class WaveManager : MonoBehaviour
@@ -19,20 +20,25 @@ public class WaveManager : MonoBehaviour
     {
         foreach (Wave wave in waves)
         {
-            List<Enemy> enemies = wave.enemyList;
-            float enemiesCount = wave.enemyList.Count;
+
+            Wave currentWave = Instantiate(wave);
+
+            List<Enemy> enemies = currentWave.enemyList;
+            float enemiesCount = currentWave.enemyList.Count;
 
             for (int i = 0; i < enemiesCount; i++)
             {
                 Enemy enemy = enemies[i];
                 Vector2 enemyPosition = new Vector2();
                 enemyPosition.x = enemy.transform.position.x;
-                enemyPosition.y = wave.inlineSpawn ? wave.spawnPositionY : (screenHeight / enemiesCount * i) - screenHeightOffset;
+                enemyPosition.y = currentWave.inlineSpawn ? currentWave.spawnPositionY : (screenHeight / enemiesCount * i) - screenHeightOffset;
 
-                Instantiate(enemy, enemyPosition, Quaternion.identity);
+                Instantiate(enemy, enemyPosition, Quaternion.identity, currentWave.transform);
 
-                if (!wave.spawnAtOnce) yield return new WaitForSeconds(wave.spawnInterval);
+                if (!currentWave.spawnAtOnce) yield return new WaitForSeconds(currentWave.spawnInterval);
             }
+
+            while (!currentWave.CallNextWave()) yield return new WaitForSeconds(.5f);
 
         }
 
