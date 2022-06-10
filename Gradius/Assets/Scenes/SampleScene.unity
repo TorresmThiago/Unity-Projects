@@ -236,9 +236,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waves:
-  - {fileID: 4214213440567614104, guid: 65676aeafcec0c047b35cb4b23b9b7eb, type: 3}
   - {fileID: 5767839494427251784, guid: b71ab019ea622884eb08182f303902a3, type: 3}
   - {fileID: 2437441751003444052, guid: acce09b7a1eb6d442aebd7756f03c660, type: 3}
+  - {fileID: 4214213440567614104, guid: 65676aeafcec0c047b35cb4b23b9b7eb, type: 3}
   screenHeight: 0
 --- !u!4 &1213226546
 Transform:
