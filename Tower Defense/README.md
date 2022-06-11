@@ -7,5 +7,7 @@
 
 ### Studied Concepts: 
 
+* Use of a spritesheet instead of multiple sprites
+
 
 ### Possible TODO features:  
