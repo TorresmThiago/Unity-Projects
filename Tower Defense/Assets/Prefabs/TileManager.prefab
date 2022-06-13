@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb0e41b943570fa40a4d31abb80ca8e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gridWidth: 0
-  _gridHeight: 0
-  _tile: {fileID: 0}
+  _gridWidth: 16
+  _gridHeight: 9
+  _tile: {fileID: -8184015419607177859, guid: 89ea5a68f05254c408a2a27fc79cb2c6, type: 3}
   _cameraTransform: {fileID: 0}
