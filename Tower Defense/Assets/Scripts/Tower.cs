@@ -1,9 +1,14 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Tower : MonoBehaviour
 {
+
+    public float cooldownTime;
+
+    private Coroutine shootingCoroutine;
 
     private List<Transform> onRange;
 
@@ -29,13 +34,22 @@ public class Tower : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("Hi! I'm " + other.transform.name);
+        if (onRange.Count == 0) shootingCoroutine = StartCoroutine(Shooting(cooldownTime));
         onRange.Add(other.transform);
+    }
+
+    private IEnumerator Shooting(float cooldown)
+    {
+        while (true)
+        {
+            Debug.Log("Shooooting");
+            yield return new WaitForSeconds(cooldown);
+        }
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        Debug.Log("Bye! I'm " + other.transform.name);
         onRange.Remove(other.transform);
+        if (onRange.Count == 0) StopCoroutine(shootingCoroutine);
     }
 }
