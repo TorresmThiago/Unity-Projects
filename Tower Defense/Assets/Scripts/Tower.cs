@@ -8,6 +8,9 @@ public class Tower : MonoBehaviour
 
     public float cooldownTime;
 
+    [SerializeField]
+    private Shoot _shoot;
+
     private Coroutine shootingCoroutine;
 
     private List<Transform> onRange;
@@ -34,16 +37,17 @@ public class Tower : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (onRange.Count == 0) shootingCoroutine = StartCoroutine(Shooting(cooldownTime));
         onRange.Add(other.transform);
+        if (onRange.Count == 1) shootingCoroutine = StartCoroutine(Shooting());
     }
 
-    private IEnumerator Shooting(float cooldown)
+    private IEnumerator Shooting()
     {
         while (true)
         {
-            Debug.Log("Shooooting");
-            yield return new WaitForSeconds(cooldown);
+            _shoot.enemyTarget = onRange[0];
+            Shoot shoot = Instantiate(_shoot, transform.position, transform.rotation);
+            yield return new WaitForSeconds(cooldownTime);
         }
     }
 
