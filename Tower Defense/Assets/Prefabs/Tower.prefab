@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7149861173079712279}
   - component: {fileID: 7149861173079712280}
   - component: {fileID: 7149861173079712281}
+  - component: {fileID: 599406694}
   m_Layer: 0
   m_Name: Tower
   m_TagString: Untagged
@@ -114,5 +115,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 954afc2a495df694e880f1c8dfd90ad4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldownTime: 1
+  cooldownTime: 2
   _shoot: {fileID: 7165088449129445157, guid: 69caecebc9356cb47a17590df0234e2a, type: 3}
+--- !u!111 &599406694
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7149861173079712282}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 67af7ee514a231b4aa8349fe59823e87, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 67af7ee514a231b4aa8349fe59823e87, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0

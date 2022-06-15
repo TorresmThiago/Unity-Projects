@@ -8,6 +8,7 @@
 ### Studied Concepts: 
 
 * Use of a spritesheet instead of multiple sprites
+* Use of the Animation Component to play a single Animation clip
 
 
 ### Possible TODO features:  

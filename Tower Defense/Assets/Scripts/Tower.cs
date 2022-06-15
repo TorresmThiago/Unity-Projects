@@ -11,12 +11,19 @@ public class Tower : MonoBehaviour
     [SerializeField]
     private Shoot _shoot;
 
+    private SpriteRenderer spriteRenderer;
+
+    private Animation animation;
+
     private Coroutine shootingCoroutine;
 
     private List<Transform> onRange;
 
     private void Start()
     {
+        spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
+        spriteRenderer.drawMode = SpriteDrawMode.Sliced;
+        animation = gameObject.GetComponent<Animation>();
         onRange = new List<Transform>();
     }
 
@@ -37,8 +44,11 @@ public class Tower : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        onRange.Add(other.transform);
-        if (onRange.Count == 1) shootingCoroutine = StartCoroutine(Shooting());
+        if (other.gameObject.tag == "Enemy")
+        {
+            onRange.Add(other.transform);
+            if (onRange.Count == 1) shootingCoroutine = StartCoroutine(Shooting());
+        }
     }
 
     private IEnumerator Shooting()
@@ -47,13 +57,17 @@ public class Tower : MonoBehaviour
         {
             _shoot.enemyTarget = onRange[0];
             Shoot shoot = Instantiate(_shoot, transform.position, transform.rotation);
+            animation.Play("Shoot");
             yield return new WaitForSeconds(cooldownTime);
         }
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        onRange.Remove(other.transform);
-        if (onRange.Count == 0) StopCoroutine(shootingCoroutine);
+        if (other.gameObject.tag == "Enemy")
+        {
+            onRange.Remove(other.transform);
+            if (onRange.Count == 0) StopCoroutine(shootingCoroutine);
+        }
     }
 }
