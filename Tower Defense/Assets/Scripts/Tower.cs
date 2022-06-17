@@ -57,7 +57,7 @@ public class Tower : MonoBehaviour
         {
             _shoot.enemyTarget = onRange[0];
             Shoot shoot = Instantiate(_shoot, transform.position, transform.rotation);
-            animation.Play("Shoot");
+            animation.Play("TowerShoot");
             yield return new WaitForSeconds(cooldownTime);
         }
     }
