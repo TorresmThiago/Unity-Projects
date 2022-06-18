@@ -1,29 +1,30 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Grid
+public class Grid<TGridObject>
 {
 
     private int width, height;
     private float cellSize;
-    private int[,] gridArray;
+    private TGridObject[,] gridArray;
     private Vector3 originPosition;
 
-    public Grid(int width, int height, float cellSize, Vector3 originPosition)
+    public Grid(int width, int height, float cellSize, Vector3 originPosition, Func<Grid<TGridObject>, int, int, TGridObject> createGridObject)
     {
         this.width = width;
         this.height = height;
         this.cellSize = cellSize;
         this.originPosition = originPosition;
 
-        gridArray = new int[width, height];
+        gridArray = new TGridObject[width, height];
 
         for (int x = 0; x < gridArray.GetLength(0); x++)
         {
             for (int y = 0; y < gridArray.GetLength(1); y++)
             {
-                gridArray[x, y] = 0;
+                gridArray[x, y] = createGridObject(this, x, y);
             }
         }
     }
@@ -39,7 +40,7 @@ public class Grid
         y = Mathf.FloorToInt((worldPosition - originPosition).y / cellSize);
     }
 
-    public void SetValue(int x, int y, int value)
+    public void SetValue(int x, int y, TGridObject value)
     {
         if (x >= 0 && x < width && y >= 0 && y < height)
         {
@@ -47,27 +48,46 @@ public class Grid
         }
     }
 
-    public void SetValue(Vector3 worldPosition, int value)
+    public void SetValue(Vector3 worldPosition, TGridObject value)
     {
         int x, y;
         GetXY(worldPosition, out x, out y);
         SetValue(x, y, value);
     }
 
-    public int GetValue(int x, int y)
+    public TGridObject GetValue(int x, int y)
     {
         if (x >= 0 && x < width && y >= 0 && y < height)
         {
             return gridArray[x, y];
         }
-        return 0;
+        else
+        {
+            return default;
+        }
     }
 
-    public int GetValue(Vector3 worldPosition)
+    public TGridObject GetValue(Vector3 worldPosition)
     {
         int x, y;
         GetXY(worldPosition, out x, out y);
         return GetValue(x, y);
+    }
+
+    public int GetLength(int dimension)
+    {
+        if (dimension == 0)
+        {
+            return width;
+        }
+        else if (dimension == 1)
+        {
+            return height;
+        }
+        else
+        {
+            return 0;
+        }
     }
 
 }
