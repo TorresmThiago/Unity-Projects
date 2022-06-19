@@ -60,6 +60,12 @@ public class Pathfinding
                     continue;
                 }
 
+                if (!neighbour.isWalkable)
+                {
+                    closedList.Add(neighbour);
+                    continue;
+                }
+
                 if (neighbour.gCost > currentNode.gCost + CalculateDistanceCost(currentNode, neighbour))
                 {
                     neighbour.gCost = currentNode.gCost + CalculateDistanceCost(currentNode, neighbour);
