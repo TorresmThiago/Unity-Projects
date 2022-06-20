@@ -13,8 +13,6 @@ public class Tower : MonoBehaviour
 
     private SpriteRenderer spriteRenderer;
 
-    private Animation animation;
-
     private Coroutine shootingCoroutine;
 
     private List<Transform> onRange;
@@ -23,7 +21,6 @@ public class Tower : MonoBehaviour
     {
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
         spriteRenderer.drawMode = SpriteDrawMode.Sliced;
-        animation = gameObject.GetComponent<Animation>();
         onRange = new List<Transform>();
     }
 
@@ -57,6 +54,8 @@ public class Tower : MonoBehaviour
         {
             _shoot.enemyTarget = onRange[0];
             Shoot shoot = Instantiate(_shoot, transform.position, transform.rotation);
+            Animation animation = gameObject.GetComponent<Animation>();
+
             animation.Play("TowerShoot");
             yield return new WaitForSeconds(cooldownTime);
         }
