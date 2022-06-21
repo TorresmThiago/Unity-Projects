@@ -29,9 +29,10 @@ public class Enemy : MonoBehaviour
 
     private void LookAtDirection()
     {
-        Quaternion rotation = Quaternion.LookRotation
-                    (targetList[currentTarget] - transform.position, transform.TransformDirection(Vector3.right));
+        Quaternion rotation = Quaternion.LookRotation(targetList[currentTarget] - transform.position, transform.TransformDirection(Vector3.forward));
         transform.rotation = new Quaternion(0, 0, rotation.z, rotation.w);
+        transform.Rotate(Vector3.back * 90);
+
     }
 
     private void MoveToPosition()
