@@ -36,7 +36,7 @@ public class Shoot : MonoBehaviour
     {
         if (other.gameObject.tag == "Enemy")
         {
-            //Debug.Log("TODO: Apply damage to enemy!");
+            other.gameObject.GetComponent<Enemy>().DamageTaken();
             Destroy(gameObject);
         }
     }
