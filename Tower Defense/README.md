@@ -9,6 +9,11 @@
 
 * Use of a spritesheet instead of multiple sprites
 * Use of the Animation Component to play a single Animation clip
+* Using Tilemap to create a grid so that the level could be drawn
+* Learned about pathfinding to make enemys proceed to end of level (Updated to pre-scripted path on each enemy)
+* With collision triggers, creation of a list of enemys on range so that tower focus could be aplied
+* Rotation scripts so that missiles face the direction they're facing
+* Custom UI design with animators  
 
 
 ### Possible TODO features:  
