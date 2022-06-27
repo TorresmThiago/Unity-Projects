@@ -2146,6 +2146,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2140832018529502198, guid: cb34117332199ee489a88dbd7dd89a6b, type: 3}
   m_PrefabInstance: {fileID: 2140832018425969082}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &439630413 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2140832018529502184, guid: cb34117332199ee489a88dbd7dd89a6b, type: 3}
+  m_PrefabInstance: {fileID: 2140832018425969082}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53a70e8d4359ded4298c50b05ce24734, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &513670936
 GameObject:
   m_ObjectHideFlags: 0
@@ -3250,6 +3261,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2114273517}
     m_Modifications:
+    - target: {fileID: 2140832017355819331, guid: cb34117332199ee489a88dbd7dd89a6b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ConstructTowerAnimation
+      objectReference: {fileID: 0}
     - target: {fileID: 2140832017355819340, guid: cb34117332199ee489a88dbd7dd89a6b, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -3294,6 +3309,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2140832017371856713, guid: cb34117332199ee489a88dbd7dd89a6b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ConstructTowerAnimation
+      objectReference: {fileID: 0}
     - target: {fileID: 2140832017734823566, guid: cb34117332199ee489a88dbd7dd89a6b, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -3318,6 +3337,18 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2140832017734823567, guid: cb34117332199ee489a88dbd7dd89a6b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 439630413}
+    - target: {fileID: 2140832017734823567, guid: cb34117332199ee489a88dbd7dd89a6b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ConstructTowerAnimation
+      objectReference: {fileID: 0}
+    - target: {fileID: 2140832017734823567, guid: cb34117332199ee489a88dbd7dd89a6b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: TowerManager, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 2140832017948641843, guid: cb34117332199ee489a88dbd7dd89a6b, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -3341,6 +3372,10 @@ PrefabInstance:
     - target: {fileID: 2140832017948641843, guid: cb34117332199ee489a88dbd7dd89a6b, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2140832017948641846, guid: cb34117332199ee489a88dbd7dd89a6b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ConstructTowerAnimation
       objectReference: {fileID: 0}
     - target: {fileID: 2140832018471863768, guid: cb34117332199ee489a88dbd7dd89a6b, type: 3}
       propertyPath: m_AnchorMax.y

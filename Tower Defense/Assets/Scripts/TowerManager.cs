@@ -7,35 +7,39 @@ public class TowerManager : MonoBehaviour
     public List<Tower> towerList;
 
     private Animator animator;
+    private int towerSelected;
 
     private void Start()
     {
         animator = GetComponent<Animator>();
     }
 
-    public void ConstructTower(string towerType)
+    public void ConstructTowerAnimation(string towerType)
     {
         switch (towerType)
         {
             case "simple":
-                animator.SetInteger("TowerBuilt", 1);
-                Debug.Log("Contruct the simple type tchuwtchuw");
+                towerSelected = 1;
                 break;
             case "fast":
-                animator.SetInteger("TowerBuilt", 2);
-                Debug.Log("Contruct the fast type KATCHAU");
+                towerSelected = 2;
                 break;
             case "strong":
-                animator.SetInteger("TowerBuilt", 3);
-                Debug.Log("Contruct the strong type KATBUUUM");
+                towerSelected = 3;
                 break;
             default:
-                animator.SetInteger("TowerBuilt", 0);
+                towerSelected = 0;
                 break;
         }
 
-
+        animator.SetInteger("TowerBuilt", towerSelected);
         animator.SetTrigger("Close");
 
+    }
+
+    public void InstantiateTower()
+    {
+        Debug.Log("Instantiate meeeeee");
+        Instantiate(towerList[towerSelected - 1], transform.position, transform.rotation, transform);
     }
 }
