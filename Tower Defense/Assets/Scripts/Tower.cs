@@ -11,7 +11,7 @@ public class Tower : MonoBehaviour
     [SerializeField]
     private Shoot _shoot;
 
-    private SpriteRenderer spriteRenderer;
+    private RectTransform rectTransform;
 
     private Coroutine shootingCoroutine;
 
@@ -19,8 +19,7 @@ public class Tower : MonoBehaviour
 
     private void Start()
     {
-        spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
-        spriteRenderer.drawMode = SpriteDrawMode.Sliced;
+        rectTransform = GetComponent<RectTransform>();
         onRange = new List<Transform>();
     }
 
@@ -29,14 +28,14 @@ public class Tower : MonoBehaviour
         if (onRange.Count != 0)
             LookAtEnemy(onRange[0]);
         else
-            transform.rotation = new Quaternion();
+            rectTransform.rotation = new Quaternion();
     }
 
     private void LookAtEnemy(Transform target)
     {
         Quaternion rotation = Quaternion.LookRotation
-                    (target.transform.position - transform.position, transform.TransformDirection(Vector3.back));
-        transform.rotation = new Quaternion(0, 0, rotation.z, rotation.w);
+                    (target.transform.position - rectTransform.position, rectTransform.TransformDirection(Vector3.back));
+        rectTransform.rotation = new Quaternion(0, 0, rotation.z, rotation.w);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -53,7 +52,7 @@ public class Tower : MonoBehaviour
         while (true)
         {
             _shoot.enemyTarget = onRange[0];
-            Shoot shoot = Instantiate(_shoot, transform.position, transform.rotation);
+            Shoot shoot = Instantiate(_shoot, rectTransform.position, rectTransform.rotation);
             Animation animation = gameObject.GetComponent<Animation>();
 
             animation.Play("TowerShoot");
