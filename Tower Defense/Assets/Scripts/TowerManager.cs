@@ -5,7 +5,6 @@ using UnityEngine;
 public class TowerManager : MonoBehaviour
 {
     public List<Tower> towerList;
-    public Vector3 spawnPosition;
 
     private Animator animator;
     private int towerSelected;
@@ -41,6 +40,6 @@ public class TowerManager : MonoBehaviour
     public void InstantiateTower()
     {
         Debug.Log("Instantiate meeeeee");
-        Instantiate(towerList[towerSelected - 1], spawnPosition, transform.rotation, transform);
+        Instantiate(towerList[towerSelected - 1], transform.position, transform.rotation, transform);
     }
 }
