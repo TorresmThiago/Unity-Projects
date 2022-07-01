@@ -3040,6 +3040,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1723252072262497213, guid: cb34117332199ee489a88dbd7dd89a6b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1723252072262497213, guid: cb34117332199ee489a88dbd7dd89a6b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1723252072273456530, guid: cb34117332199ee489a88dbd7dd89a6b, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -3084,6 +3092,46 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1723252072962342252, guid: cb34117332199ee489a88dbd7dd89a6b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1723252072962342252, guid: cb34117332199ee489a88dbd7dd89a6b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1723252072962342252, guid: cb34117332199ee489a88dbd7dd89a6b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1723252073033410380, guid: cb34117332199ee489a88dbd7dd89a6b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1723252073033410380, guid: cb34117332199ee489a88dbd7dd89a6b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1723252073033410380, guid: cb34117332199ee489a88dbd7dd89a6b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 1723252073294101678, guid: cb34117332199ee489a88dbd7dd89a6b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1723252073294101678, guid: cb34117332199ee489a88dbd7dd89a6b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1723252073294101678, guid: cb34117332199ee489a88dbd7dd89a6b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2140832018529502186, guid: cb34117332199ee489a88dbd7dd89a6b, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 0380e5eb14e26a441971c9835d4bf9a2, type: 2}
     - target: {fileID: 2140832018529502193, guid: cb34117332199ee489a88dbd7dd89a6b, type: 3}
       propertyPath: m_Name
       value: TowerStation
