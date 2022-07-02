@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 1723252072262497213}
   - component: {fileID: 1723252072262497215}
   - component: {fileID: 1723252072262497214}
+  - component: {fileID: 565454439}
   m_Layer: 0
   m_Name: FastTower
-  m_TagString: Untagged
+  m_TagString: BuildOption_2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -112,6 +113,33 @@ MonoBehaviour:
           m_StringArgument: fast
           m_BoolArgument: 0
         m_CallState: 2
+  targetTag: BuildOption_2
+--- !u!61 &565454439
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2140832017355819343}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1.0003755}
+    newSize: {x: 1, y: 1.0003755}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.0003755}
+  m_EdgeRadius: 0
 --- !u!1 &2140832017371856715
 GameObject:
   m_ObjectHideFlags: 0
@@ -123,9 +151,10 @@ GameObject:
   - component: {fileID: 1723252072962342252}
   - component: {fileID: 1723252072962342254}
   - component: {fileID: 1723252072962342253}
+  - component: {fileID: 1087848864}
   m_Layer: 0
   m_Name: SimpleTower
-  m_TagString: Untagged
+  m_TagString: BuildOption_1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -224,6 +253,33 @@ MonoBehaviour:
           m_StringArgument: simple
           m_BoolArgument: 0
         m_CallState: 2
+  targetTag: BuildOption_1
+--- !u!61 &1087848864
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2140832017371856715}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1.0003755}
+    newSize: {x: 1, y: 1.0003755}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.0003755}
+  m_EdgeRadius: 0
 --- !u!1 &2140832017734823561
 GameObject:
   m_ObjectHideFlags: 0
@@ -235,9 +291,10 @@ GameObject:
   - component: {fileID: 1723252073033410380}
   - component: {fileID: 1723252073033410382}
   - component: {fileID: 1723252073033410381}
+  - component: {fileID: 513696388}
   m_Layer: 0
   m_Name: Close
-  m_TagString: Untagged
+  m_TagString: UIOption_Close
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -337,6 +394,23 @@ MonoBehaviour:
           m_StringArgument: close
           m_BoolArgument: 0
         m_CallState: 2
+  targetTag: UIOption_Close
+--- !u!58 &513696388
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2140832017734823561}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.01, y: -0.03}
+  serializedVersion: 2
+  m_Radius: 0.36
 --- !u!1 &2140832017948641842
 GameObject:
   m_ObjectHideFlags: 0
@@ -348,9 +422,10 @@ GameObject:
   - component: {fileID: 1723252073294101678}
   - component: {fileID: 1723252073294101648}
   - component: {fileID: 1723252073294101679}
+  - component: {fileID: 1711762050}
   m_Layer: 0
   m_Name: StrongTower
-  m_TagString: Untagged
+  m_TagString: BuildOption_3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -449,6 +524,33 @@ MonoBehaviour:
           m_StringArgument: strong
           m_BoolArgument: 0
         m_CallState: 2
+  targetTag: BuildOption_3
+--- !u!61 &1711762050
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2140832017948641842}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1.0003755}
+    newSize: {x: 1, y: 1.0003755}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.0003755}
+  m_EdgeRadius: 0
 --- !u!1 &2140832018471863771
 GameObject:
   m_ObjectHideFlags: 0
@@ -495,9 +597,11 @@ GameObject:
   - component: {fileID: 1723252072273456529}
   - component: {fileID: 2140832018529502186}
   - component: {fileID: 2140832018529502184}
+  - component: {fileID: 2090298495}
+  - component: {fileID: 2090298494}
   m_Layer: 0
   m_Name: TowerStation
-  m_TagString: Untagged
+  m_TagString: TowerStation
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -581,7 +685,7 @@ Animator:
   m_GameObject: {fileID: 2140832018529502193}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0380e5eb14e26a441971c9835d4bf9a2, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -607,6 +711,60 @@ MonoBehaviour:
   - {fileID: 7149861173079712281, guid: c337babc00a1a624abfe5239baeadf89, type: 3}
   - {fileID: 7149861173079712281, guid: c337babc00a1a624abfe5239baeadf89, type: 3}
   - {fileID: 7149861173079712281, guid: c337babc00a1a624abfe5239baeadf89, type: 3}
+--- !u!61 &2090298495
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2140832018529502193}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1.0003755}
+    newSize: {x: 1, y: 1.0003755}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.0003755}
+  m_EdgeRadius: 0
+--- !u!114 &2090298494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2140832018529502193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e53acfef1fdd25e44b4f6c1676849fd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unityEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2140832018529502186}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Open
+          m_BoolArgument: 0
+        m_CallState: 2
+  targetTag: TowerStation
 --- !u!1 &5714417847326486234
 GameObject:
   m_ObjectHideFlags: 0

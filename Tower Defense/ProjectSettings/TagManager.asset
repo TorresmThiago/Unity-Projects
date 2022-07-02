@@ -5,6 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
+  - TowerStation
+  - BuildOption_1
+  - BuildOption_2
+  - BuildOption_3
+  - UIOption_Close
   layers:
   - Default
   - TransparentFX

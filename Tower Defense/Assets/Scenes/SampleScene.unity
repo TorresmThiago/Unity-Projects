@@ -2669,6 +2669,27 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &513696384 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2140832017734823561, guid: cb34117332199ee489a88dbd7dd89a6b, type: 3}
+  m_PrefabInstance: {fileID: 1723252071767680176}
+  m_PrefabAsset: {fileID: 0}
+--- !u!58 &513696388
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 513696384}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.01, y: -0.03}
+  serializedVersion: 2
+  m_Radius: 0.36
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -2753,6 +2774,68 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &565454435 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2140832017355819343, guid: cb34117332199ee489a88dbd7dd89a6b, type: 3}
+  m_PrefabInstance: {fileID: 1723252071767680176}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &565454439
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 565454435}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1.0003755}
+    newSize: {x: 1, y: 1.0003755}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.0003755}
+  m_EdgeRadius: 0
+--- !u!1 &1087848860 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2140832017371856715, guid: cb34117332199ee489a88dbd7dd89a6b, type: 3}
+  m_PrefabInstance: {fileID: 1723252071767680176}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &1087848864
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1087848860}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1.0003755}
+    newSize: {x: 1, y: 1.0003755}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.0003755}
+  m_EdgeRadius: 0
 --- !u!1 &1230959957
 GameObject:
   m_ObjectHideFlags: 0
@@ -3033,6 +3116,101 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1711762046 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2140832017948641842, guid: cb34117332199ee489a88dbd7dd89a6b, type: 3}
+  m_PrefabInstance: {fileID: 1723252071767680176}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &1711762050
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1711762046}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1.0003755}
+    newSize: {x: 1, y: 1.0003755}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.0003755}
+  m_EdgeRadius: 0
+--- !u!1 &2090298489 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2140832018529502193, guid: cb34117332199ee489a88dbd7dd89a6b, type: 3}
+  m_PrefabInstance: {fileID: 1723252071767680176}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &2090298491 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2140832018529502186, guid: cb34117332199ee489a88dbd7dd89a6b, type: 3}
+  m_PrefabInstance: {fileID: 1723252071767680176}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2090298494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2090298489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e53acfef1fdd25e44b4f6c1676849fd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unityEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2090298491}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Open
+          m_BoolArgument: 0
+        m_CallState: 2
+  targetTag: TowerStation
+--- !u!61 &2090298495
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2090298489}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1.0003755}
+    newSize: {x: 1, y: 1.0003755}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.0003755}
+  m_EdgeRadius: 0
 --- !u!1001 &1723252071767680176
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3047,6 +3225,10 @@ PrefabInstance:
     - target: {fileID: 1723252072262497213, guid: cb34117332199ee489a88dbd7dd89a6b, type: 3}
       propertyPath: m_LocalScale.y
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1723252072262497214, guid: cb34117332199ee489a88dbd7dd89a6b, type: 3}
+      propertyPath: targetTag
+      value: BuildOption_2
       objectReference: {fileID: 0}
     - target: {fileID: 1723252072273456530, guid: cb34117332199ee489a88dbd7dd89a6b, type: 3}
       propertyPath: m_RootOrder
@@ -3104,6 +3286,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: -1
       objectReference: {fileID: 0}
+    - target: {fileID: 1723252072962342253, guid: cb34117332199ee489a88dbd7dd89a6b, type: 3}
+      propertyPath: targetTag
+      value: BuildOption_1
+      objectReference: {fileID: 0}
     - target: {fileID: 1723252073033410380, guid: cb34117332199ee489a88dbd7dd89a6b, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -3115,6 +3301,10 @@ PrefabInstance:
     - target: {fileID: 1723252073033410380, guid: cb34117332199ee489a88dbd7dd89a6b, type: 3}
       propertyPath: m_LocalPosition.y
       value: -0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 1723252073033410381, guid: cb34117332199ee489a88dbd7dd89a6b, type: 3}
+      propertyPath: targetTag
+      value: UIOption_Close
       objectReference: {fileID: 0}
     - target: {fileID: 1723252073294101678, guid: cb34117332199ee489a88dbd7dd89a6b, type: 3}
       propertyPath: m_LocalScale.x
@@ -3128,12 +3318,36 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1723252073294101679, guid: cb34117332199ee489a88dbd7dd89a6b, type: 3}
+      propertyPath: targetTag
+      value: BuildOption_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2140832017355819343, guid: cb34117332199ee489a88dbd7dd89a6b, type: 3}
+      propertyPath: m_TagString
+      value: BuildOption_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2140832017371856715, guid: cb34117332199ee489a88dbd7dd89a6b, type: 3}
+      propertyPath: m_TagString
+      value: BuildOption_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2140832017734823561, guid: cb34117332199ee489a88dbd7dd89a6b, type: 3}
+      propertyPath: m_TagString
+      value: UIOption_Close
+      objectReference: {fileID: 0}
+    - target: {fileID: 2140832017948641842, guid: cb34117332199ee489a88dbd7dd89a6b, type: 3}
+      propertyPath: m_TagString
+      value: BuildOption_3
+      objectReference: {fileID: 0}
     - target: {fileID: 2140832018529502186, guid: cb34117332199ee489a88dbd7dd89a6b, type: 3}
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 0380e5eb14e26a441971c9835d4bf9a2, type: 2}
     - target: {fileID: 2140832018529502193, guid: cb34117332199ee489a88dbd7dd89a6b, type: 3}
       propertyPath: m_Name
+      value: TowerStation
+      objectReference: {fileID: 0}
+    - target: {fileID: 2140832018529502193, guid: cb34117332199ee489a88dbd7dd89a6b, type: 3}
+      propertyPath: m_TagString
       value: TowerStation
       objectReference: {fileID: 0}
     m_RemovedComponents: []
