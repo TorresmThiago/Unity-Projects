@@ -292,6 +292,7 @@ GameObject:
   - component: {fileID: 1723252073033410382}
   - component: {fileID: 1723252073033410381}
   - component: {fileID: 513696388}
+  - component: {fileID: 2432163726783666237}
   m_Layer: 0
   m_Name: Close
   m_TagString: UIOption_Close
@@ -396,6 +397,22 @@ MonoBehaviour:
         m_CallState: 2
   targetTag: UIOption_Close
 --- !u!58 &513696388
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2140832017734823561}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.01, y: -0.03}
+  serializedVersion: 2
+  m_Radius: 0.36
+--- !u!58 &2432163726783666237
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -708,9 +725,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   towerList:
-  - {fileID: 7149861173079712281, guid: c337babc00a1a624abfe5239baeadf89, type: 3}
-  - {fileID: 7149861173079712281, guid: c337babc00a1a624abfe5239baeadf89, type: 3}
-  - {fileID: 7149861173079712281, guid: c337babc00a1a624abfe5239baeadf89, type: 3}
+  - {fileID: -2063924479745136164, guid: 756cbd9aa9c9e8c49abfae6a0254548c, type: 3}
+  - {fileID: 2487709838232465963, guid: 0f32133a7d6d15741a5fc03432b722ac, type: 3}
+  - {fileID: 2243648676760280873, guid: f1a56bdcb5543d04ea921ec963c5cd2a, type: 3}
 --- !u!61 &2090298495
 BoxCollider2D:
   m_ObjectHideFlags: 0

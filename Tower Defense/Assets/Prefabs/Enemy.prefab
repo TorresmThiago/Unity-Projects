@@ -155,3 +155,4 @@ MonoBehaviour:
   - {x: -7, y: -3, z: 0}
   - {x: 11, y: -3, z: 0}
   speed: 3
+  healthPoints: 5
