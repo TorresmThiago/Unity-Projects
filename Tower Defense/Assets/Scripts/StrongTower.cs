@@ -7,6 +7,5 @@ public class StrongTower : Tower
     void Start()
     {
         cooldownTime = 2.25f;
-        damage = 2f;
     }
 }

@@ -7,6 +7,7 @@ public class Shoot : MonoBehaviour
 
     public Transform enemyTarget;
     public float speed;
+    public float damage;
 
     private void Start()
     {

@@ -7,7 +7,6 @@ public class Tower : MonoBehaviour
 {
 
     public float cooldownTime;
-    public float damage;
 
     [SerializeField]
     private Shoot _shoot;

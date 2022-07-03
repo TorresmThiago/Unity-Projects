@@ -100,7 +100,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyTarget: {fileID: 0}
-  speed: 3
+  speed: 0
+  damage: 1
 --- !u!70 &7165088449129445162
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -137,4 +138,4 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 3
+  m_Constraints: 0
