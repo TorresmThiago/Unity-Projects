@@ -27,6 +27,7 @@ public class WaveManager : MonoBehaviour
 
                 Instantiate(enemy, currentWave.transform);
 
+                yield return new WaitForSeconds(wave.spawnInterval);
             }
 
             while (!currentWave.CallNextWave()) yield return new WaitForSeconds(.5f);

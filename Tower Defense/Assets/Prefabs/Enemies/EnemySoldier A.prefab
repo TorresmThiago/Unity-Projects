@@ -13,11 +13,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3784906535233554241, guid: 40515b515dd607947a6c65dafc7dd045, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -7
       objectReference: {fileID: 0}
     - target: {fileID: 3784906535233554241, guid: 40515b515dd607947a6c65dafc7dd045, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 5.8
       objectReference: {fileID: 0}
     - target: {fileID: 3784906535233554241, guid: 40515b515dd607947a6c65dafc7dd045, type: 3}
       propertyPath: m_LocalPosition.z
@@ -66,6 +66,14 @@ PrefabInstance:
     - target: {fileID: 3784906535233554242, guid: 40515b515dd607947a6c65dafc7dd045, type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3784906535233554247, guid: 40515b515dd607947a6c65dafc7dd045, type: 3}
+      propertyPath: speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3784906535233554247, guid: 40515b515dd607947a6c65dafc7dd045, type: 3}
+      propertyPath: healthPoints
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3784906535233554252, guid: 40515b515dd607947a6c65dafc7dd045, type: 3}
       propertyPath: m_SpriteTilingProperty.newSize.x

@@ -51,6 +51,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7149861173079712279, guid: c337babc00a1a624abfe5239baeadf89, type: 3}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7149861173079712279, guid: c337babc00a1a624abfe5239baeadf89, type: 3}
+      propertyPath: m_Size.y
+      value: 1.0003755
+      objectReference: {fileID: 0}
+    - target: {fileID: 7149861173079712279, guid: c337babc00a1a624abfe5239baeadf89, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 910644110, guid: 1b9eede746bcedc4b8b654f4e8990cdc, type: 3}
+    - target: {fileID: 7149861173079712279, guid: c337babc00a1a624abfe5239baeadf89, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7149861173079712280, guid: c337babc00a1a624abfe5239baeadf89, type: 3}
+      propertyPath: m_Radius
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7149861173079712282, guid: c337babc00a1a624abfe5239baeadf89, type: 3}
       propertyPath: m_Name
       value: SimpleTower
@@ -75,3 +95,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b37766c80a1fc04ca7142d1db501f31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _shoot: {fileID: 7165088449129445157, guid: 69caecebc9356cb47a17590df0234e2a, type: 3}

@@ -4,15 +4,9 @@ using UnityEngine;
 
 public class Shoot : MonoBehaviour
 {
-
     public Transform enemyTarget;
     public float speed;
     public float damage;
-
-    private void Start()
-    {
-        speed = 10;
-    }
 
     void Update()
     {
@@ -37,7 +31,7 @@ public class Shoot : MonoBehaviour
     {
         if (other.gameObject.tag == "Enemy")
         {
-            other.gameObject.GetComponent<Enemy>().DamageTaken();
+            other.gameObject.GetComponent<Enemy>().DamageTaken(damage);
             Destroy(gameObject);
         }
     }

@@ -55,9 +55,40 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -1163479853, guid: 16e24f6e57583ff43b775d3486dc8870, type: 3}
+    - target: {fileID: 7149861173079712279, guid: c337babc00a1a624abfe5239baeadf89, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7149861173079712280, guid: c337babc00a1a624abfe5239baeadf89, type: 3}
+      propertyPath: m_Radius
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7149861173079712281, guid: c337babc00a1a624abfe5239baeadf89, type: 3}
+      propertyPath: _shoot
+      value: 
+      objectReference: {fileID: 746619154513530376, guid: d5d15488d8a58d04b921422094905150, type: 3}
     - target: {fileID: 7149861173079712282, guid: c337babc00a1a624abfe5239baeadf89, type: 3}
       propertyPath: m_Name
       value: StrongTower
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c337babc00a1a624abfe5239baeadf89, type: 3}
+--- !u!1 &2243648676760280874 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7149861173079712282, guid: c337babc00a1a624abfe5239baeadf89, type: 3}
+  m_PrefabInstance: {fileID: 8942568103650557232}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &-2465602087649843843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2243648676760280874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44e293db6d9103549b3cceea495660c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cooldownTime: 0
+  _shoot: {fileID: 746619154513530376, guid: d5d15488d8a58d04b921422094905150, type: 3}

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FastTower : Tower
 {
-    void Start()
+    void Awake()
     {
         cooldownTime = .75f;
     }

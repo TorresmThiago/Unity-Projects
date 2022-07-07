@@ -6,6 +6,7 @@ using UnityEngine;
 public class Tower : MonoBehaviour
 {
 
+    [NonSerialized]
     public float cooldownTime;
 
     [SerializeField]

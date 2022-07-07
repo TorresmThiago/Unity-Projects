@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &645656801255635976
+--- !u!1001 &5056299993468852405
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -13,11 +13,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3784906535233554241, guid: 40515b515dd607947a6c65dafc7dd045, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -7
       objectReference: {fileID: 0}
     - target: {fileID: 3784906535233554241, guid: 40515b515dd607947a6c65dafc7dd045, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 5.8
       objectReference: {fileID: 0}
     - target: {fileID: 3784906535233554241, guid: 40515b515dd607947a6c65dafc7dd045, type: 3}
       propertyPath: m_LocalPosition.z
@@ -57,12 +57,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3784906535233554242, guid: 40515b515dd607947a6c65dafc7dd045, type: 3}
       propertyPath: m_Size.y
-      value: 1.0003755
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3784906535233554242, guid: 40515b515dd607947a6c65dafc7dd045, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -2104860897, guid: 1b9eede746bcedc4b8b654f4e8990cdc, type: 3}
+      objectReference: {fileID: 1959673219, guid: 16e24f6e57583ff43b775d3486dc8870, type: 3}
     - target: {fileID: 3784906535233554242, guid: 40515b515dd607947a6c65dafc7dd045, type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1
@@ -73,15 +73,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3784906535233554252, guid: 40515b515dd607947a6c65dafc7dd045, type: 3}
       propertyPath: m_SpriteTilingProperty.newSize.y
-      value: 1.0003755
-      objectReference: {fileID: 0}
-    - target: {fileID: 3784906535233554252, guid: 40515b515dd607947a6c65dafc7dd045, type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 1.0003755
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3784906535233554253, guid: 40515b515dd607947a6c65dafc7dd045, type: 3}
       propertyPath: m_Name
-      value: Enemy Plane A
+      value: EnemySoldier B
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40515b515dd607947a6c65dafc7dd045, type: 3}

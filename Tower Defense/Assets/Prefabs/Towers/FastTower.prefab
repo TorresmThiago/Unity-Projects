@@ -55,9 +55,39 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 61787335, guid: 16e24f6e57583ff43b775d3486dc8870, type: 3}
+    - target: {fileID: 7149861173079712279, guid: c337babc00a1a624abfe5239baeadf89, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7149861173079712280, guid: c337babc00a1a624abfe5239baeadf89, type: 3}
+      propertyPath: m_Radius
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7149861173079712281, guid: c337babc00a1a624abfe5239baeadf89, type: 3}
+      propertyPath: _shoot
+      value: 
+      objectReference: {fileID: 7190931137962121595, guid: 9fc620e06c01a64439912e32a2cf7b6d, type: 3}
     - target: {fileID: 7149861173079712282, guid: c337babc00a1a624abfe5239baeadf89, type: 3}
       propertyPath: m_Name
       value: FastTower
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c337babc00a1a624abfe5239baeadf89, type: 3}
+--- !u!1 &2487709838232465960 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7149861173079712282, guid: c337babc00a1a624abfe5239baeadf89, type: 3}
+  m_PrefabInstance: {fileID: 4737635282265903154}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6045520076780277058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2487709838232465960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3e9d08107b22e4ba6d9cd018cf08fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _shoot: {fileID: 7190931137962121595, guid: 9fc620e06c01a64439912e32a2cf7b6d, type: 3}

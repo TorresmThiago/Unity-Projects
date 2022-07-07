@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class StrongTower : Tower
 {
-    void Start()
+    void Awake()
     {
         cooldownTime = 2.25f;
     }

@@ -7,7 +7,7 @@ public class Enemy : MonoBehaviour
 
     public List<Vector3> targetList;
     public float speed;
-    public int healthPoints;
+    public float healthPoints;
 
     private int currentTarget;
 
@@ -18,7 +18,7 @@ public class Enemy : MonoBehaviour
 
     void Update()
     {
-        if (transform.position.x > 10f || healthPoints == 0)
+        if (transform.position.x > 10f || healthPoints <= 0)
             Destroy(gameObject);
 
         if (transform.position == targetList[currentTarget])
@@ -28,7 +28,7 @@ public class Enemy : MonoBehaviour
         MoveToPosition();
     }
 
-    public void DamageTaken() { healthPoints--; }
+    public void DamageTaken(float damage) { healthPoints -= damage; }
 
     private void LookAtDirection()
     {
