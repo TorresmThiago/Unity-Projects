@@ -7,19 +7,18 @@ using TMPro;
 public class Card : MonoBehaviour
 {
     public Sprite cardBack;
-
     public CardType cardType;
-
-    [SerializeField]
-    private string hexCode;
+    public string hexCode;
 
     private TextMeshProUGUI _text;
+    private Animator _animator;
     private Image _image;
     private bool showing;
 
     void Start()
     {
         _text = GetComponentInChildren<TextMeshProUGUI>();
+        _animator = GetComponent<Animator>();
         _image = GetComponent<Image>();
         showing = false;
     }
@@ -50,6 +49,8 @@ public class Card : MonoBehaviour
             }
         }
 
+        CardManager.Instance.AddElementToCompare(this);
+
         _image.sprite = null;
     }
 
@@ -58,6 +59,21 @@ public class Card : MonoBehaviour
         _text.text = "";
         _image.color = new Color(1, 1, 1, 1);
         _image.sprite = cardBack;
+    }
+
+    public IEnumerator FadeAway()
+    {
+        yield return new WaitForSeconds(1f);
+        _animator.SetTrigger("Match");
+        yield return new WaitForSeconds(.75f);
+        Debug.Log("Destroy?");
+        Destroy(gameObject);
+    }
+
+    public IEnumerator FlipBack()
+    {
+        yield return new WaitForSeconds(.75f);
+        _animator.SetTrigger("Flip");
     }
 
     public enum CardType
