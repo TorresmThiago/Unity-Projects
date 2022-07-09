@@ -6,9 +6,9 @@ using TMPro;
 
 public class Card : MonoBehaviour
 {
-
     public Sprite cardBack;
 
+    public CardType cardType;
 
     [SerializeField]
     private string hexCode;
@@ -27,18 +27,29 @@ public class Card : MonoBehaviour
     public void TriggerCardAnimation()
     {
         if (showing)
-        {
             Hide();
-        }
-        else { Show(); }
+        else
+            Show();
 
         showing = !showing;
     }
 
     public void Show()
     {
-        _text.text = hexCode;
-        if (ColorUtility.TryParseHtmlString(hexCode, out Color color)) { _image.color = color; }
+        if (ColorUtility.TryParseHtmlString(hexCode, out Color color))
+        {
+            if (cardType == CardType.Hex)
+            {
+                _text.color = color;
+                _text.text = hexCode;
+            }
+
+            if (cardType == CardType.Color)
+            {
+                _image.color = color;
+            }
+        }
+
         _image.sprite = null;
     }
 
@@ -47,6 +58,12 @@ public class Card : MonoBehaviour
         _text.text = "";
         _image.color = new Color(1, 1, 1, 1);
         _image.sprite = cardBack;
+    }
+
+    public enum CardType
+    {
+        Hex,
+        Color
     }
 
 }
