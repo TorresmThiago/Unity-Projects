@@ -50,7 +50,7 @@ public class Card : MonoBehaviour
         }
 
         CardManager.Instance.AddElementToCompare(this);
-
+        Panel.Instance.AddElementToPanel(this);
         _image.sprite = null;
     }
 
