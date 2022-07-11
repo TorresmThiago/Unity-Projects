@@ -45,3 +45,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   compareList: []
+  panelText: {fileID: 0}
+  panelBackground: {fileID: 0}

@@ -24,6 +24,12 @@ public class Card : MonoBehaviour
         showing = false;
     }
 
+    public void CardClick()
+    {
+        if (!CardManager.Instance.compareList.Contains(this))
+            _animator.SetTrigger("Flip");
+    }
+
     public void TriggerCardAnimation()
     {
         if (showing)
