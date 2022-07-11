@@ -24,6 +24,20 @@ public class Panel : MonoBehaviour
         _background = GetComponent<Image>();
     }
 
+    public IEnumerator PanelMatch(bool result)
+    {
+        if (result)
+        {
+            yield return new WaitForSeconds(1f);
+            _animator.SetTrigger("Match");
+        }
+        else
+        {
+            yield return new WaitForSeconds(.75f);
+            _animator.SetTrigger("Wrong");
+        }
+    }
+
     public void AddElementToPanel(Card card)
     {
         if (ColorUtility.TryParseHtmlString(card.hexCode, out Color color))

@@ -303,6 +303,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7fbaf0fc974ada48a69f62dff8a6254, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardBack: {fileID: 21300000, guid: 454b27801370bbf428a6755c4f765dd8, type: 3}
+  cardImage: {fileID: 21300000, guid: 454b27801370bbf428a6755c4f765dd8, type: 3}
+  cardBackground: {fileID: 21300000, guid: 206b5c1fadafab041b6da7e8a7f1dffe, type: 3}
   cardType: 1
   hexCode: '#FF0000'

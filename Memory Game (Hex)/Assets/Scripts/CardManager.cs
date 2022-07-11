@@ -31,7 +31,10 @@ public class CardManager : MonoBehaviour
         {
             foreach (Card cardElement in compareList)
             {
-                if (CompareElements())
+                bool result = CompareElements();
+                StartCoroutine(Panel.Instance.PanelMatch(result));
+
+                if (result)
                     StartCoroutine(cardElement.FadeAway());
                 else
                     StartCoroutine(cardElement.FlipBack());

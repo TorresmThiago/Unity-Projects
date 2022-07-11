@@ -6,7 +6,8 @@ using TMPro;
 
 public class Card : MonoBehaviour
 {
-    public Sprite cardBack;
+    public Sprite cardImage;
+    public Sprite cardBackground;
     public CardType cardType;
     public string hexCode;
 
@@ -51,14 +52,14 @@ public class Card : MonoBehaviour
 
         CardManager.Instance.AddElementToCompare(this);
         Panel.Instance.AddElementToPanel(this);
-        _image.sprite = null;
+        _image.sprite = cardBackground;
     }
 
     public void Hide()
     {
         _text.text = "";
         _image.color = new Color(1, 1, 1, 1);
-        _image.sprite = cardBack;
+        _image.sprite = cardImage;
     }
 
     public IEnumerator FadeAway()
@@ -66,7 +67,6 @@ public class Card : MonoBehaviour
         yield return new WaitForSeconds(1f);
         _animator.SetTrigger("Match");
         yield return new WaitForSeconds(.75f);
-        Debug.Log("Destroy?");
         Destroy(gameObject);
     }
 
