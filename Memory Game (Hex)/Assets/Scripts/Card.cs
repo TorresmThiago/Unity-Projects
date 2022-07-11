@@ -73,7 +73,8 @@ public class Card : MonoBehaviour
         yield return new WaitForSeconds(1f);
         _animator.SetTrigger("Match");
         yield return new WaitForSeconds(.75f);
-        Destroy(gameObject);
+        _image.enabled = false;
+        _text.enabled = false;
     }
 
     public IEnumerator FlipBack()
@@ -82,10 +83,10 @@ public class Card : MonoBehaviour
         _animator.SetTrigger("Flip");
     }
 
-    public enum CardType
-    {
-        Hex,
-        Color
-    }
+}
 
+public enum CardType
+{
+    Hex,
+    Color
 }

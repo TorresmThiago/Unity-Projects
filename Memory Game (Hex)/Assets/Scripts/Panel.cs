@@ -42,7 +42,7 @@ public class Panel : MonoBehaviour
     {
         if (ColorUtility.TryParseHtmlString(card.hexCode, out Color color))
         {
-            if (card.cardType == Card.CardType.Hex)
+            if (card.cardType == CardType.Hex)
                 _text.text = card.hexCode;
             else
                 _background.color = color;

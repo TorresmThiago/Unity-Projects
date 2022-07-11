@@ -13,9 +13,41 @@ public class CardManager : MonoBehaviour
     public TextMeshProUGUI panelText;
     public Image panelBackground;
 
+    public GameObject grid;
+
+    [SerializeField]
+    private Card cardPrefab;
+    private ColorLibrary colorLibrary;
+
+    private List<string> colorList;
+
     private void Awake()
     {
         Instance = this;
+    }
+
+    private void Start()
+    {
+        colorLibrary = new ColorLibrary();
+        colorList = colorLibrary.GetColorList();
+        InstantiateCardGrid(colorList);
+    }
+
+    private void InstantiateCardGrid(List<string> colorList, int gridHeight = 5, int gridWidth = 4)
+    {
+        int colorListIndex = 0;
+        for (int i = 0; i < gridHeight; i++)
+        {
+            for (int j = 0; j < gridWidth; j++)
+            {
+                Transform parent = grid.transform.Find("CardRow " + i);
+                Card card = Instantiate(cardPrefab, new Vector3(i, j, 0), Quaternion.identity, parent);
+                string[] cardInfo = colorList[colorListIndex].Split("#");
+                card.cardType = cardInfo[0] == "C" ? CardType.Color : CardType.Hex;
+                card.hexCode = "#" + cardInfo[1];
+                colorListIndex++;
+            }
+        }
     }
 
     public bool CompareElements()
