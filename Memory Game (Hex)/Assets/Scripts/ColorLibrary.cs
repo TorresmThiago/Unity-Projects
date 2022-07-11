@@ -3,11 +3,17 @@ using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
 
-public class ColorLibrary : ScriptableObject
+public class ColorLibrary
 {
     public List<string> GetColorList()//LevelDificulty level)
     {
         List<string> colorList = new List<string>();
+
+        colorList.Add("H#FF0000"); colorList.Add("C#FF0000"); // red
+        colorList.Add("H#00FF00"); colorList.Add("C#00FF00"); // green
+        colorList.Add("H#0000FF"); colorList.Add("C#0000FF"); // blue
+        colorList.Add("H#FFFF00"); colorList.Add("C#FFFF00"); // yellow
+        colorList.Add("H#C0C0C0"); colorList.Add("C#C0C0C0"); // gray
 
         colorList.Add("H#FF0000"); colorList.Add("C#FF0000"); // red
         colorList.Add("H#00FF00"); colorList.Add("C#00FF00"); // green
@@ -36,14 +42,16 @@ public class ColorLibrary : ScriptableObject
     private List<string> GenerateColorList(List<string> selectedList)
     {
         for (var i = selectedList.Count; i > 0; i--)
-            SwapListItem(selectedList, 0, Random.Range(0, i) - 1);
+        {
+            SwapListItem(selectedList, 0, Random.Range(0, i - 1));
+        }
 
         return selectedList;
     }
 
     private void SwapListItem(List<string> list, int i, int j)
     {
-        var temp = list[i];
+        string temp = list[i];
         list[i] = list[j];
         list[j] = temp;
     }

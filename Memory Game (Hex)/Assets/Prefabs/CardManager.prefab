@@ -47,3 +47,5 @@ MonoBehaviour:
   compareList: []
   panelText: {fileID: 0}
   panelBackground: {fileID: 0}
+  canvas: {fileID: 0}
+  cardPrefab: {fileID: 5858164607507785912, guid: e35b2fc2d4f16654d87d7877e7f0f4d3, type: 3}
