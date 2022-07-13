@@ -10,7 +10,7 @@
 * [Snake](Snake)
 * [Gradius](Gradius)
 * [Tower Defense](Tower%20Defense)
-* [Memory Game](Memory%20Game) - Hexadec Memory
+* [Memory Game](Memory%20Game%20(Hex)) - Hexadec Memory
 
 
 #### Refined Project
