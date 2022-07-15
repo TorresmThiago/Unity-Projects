@@ -11,6 +11,7 @@
 * [Gradius](Gradius)
 * [Tower Defense](Tower%20Defense)
 * [Memory Game](Memory%20Game%20(Hex)) - Hexadec Memory
+* [Tic-Tac-Toe](Tic-Tac-Toe)
 
 
 #### Refined Project

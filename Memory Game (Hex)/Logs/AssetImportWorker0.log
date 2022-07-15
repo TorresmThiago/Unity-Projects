@@ -726,3 +726,164 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1009.197269 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset
+  artifactKey: Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset using Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37400fe6bfab543e098292df1ba30c6f') in 0.173131 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000095 seconds.
+  path: Assets/CustomFonts/Mixolydian_font SDF.asset
+  artifactKey: Guid(c1b7b792458aed1478e6645ee3046ed4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CustomFonts/Mixolydian_font SDF.asset using Guid(c1b7b792458aed1478e6645ee3046ed4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78968f32b70fe2b3d14e341b1a19da8b') in 0.037008 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 186.995763 seconds.
+  path: Assets/Sprites/AppSettings
+  artifactKey: Guid(fea374d3ef20e9b4094d45ecb21b2940) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/AppSettings using Guid(fea374d3ef20e9b4094d45ecb21b2940) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb3d142d798dfb2790925aab406140da') in 0.007141 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.999808 seconds.
+  path: Assets/Sprites/AppSettings/Icons
+  artifactKey: Guid(2cfab19136f145543bd16c7883833d85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/AppSettings/Icons using Guid(2cfab19136f145543bd16c7883833d85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3cc5a83e79d3ae499c2e6fa3228669bf') in 0.009271 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.431913 seconds.
+  path: Assets/Sprites/AppSettings/Icon
+  artifactKey: Guid(2cfab19136f145543bd16c7883833d85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/AppSettings/Icon using Guid(2cfab19136f145543bd16c7883833d85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f56a0df9abcae97dcef1b83f374adcc') in 0.007292 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 22.419014 seconds.
+  path: Assets/Sprites/AppSettings/Icon/playstore.png
+  artifactKey: Guid(6075215c69ee2424298d790b12bf04f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/AppSettings/Icon/playstore.png using Guid(6075215c69ee2424298d790b12bf04f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b2993472ebac1a72f7b401595562044') in 0.076448 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 28.864692 seconds.
+  path: Assets/Sprites/AppSettings/Icon/mipmap-hdpi/hm_icon.png
+  artifactKey: Guid(5d35e86546a58654eb51ed2176919a37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/AppSettings/Icon/mipmap-hdpi/hm_icon.png using Guid(5d35e86546a58654eb51ed2176919a37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '978d45683196dedfe0ddf054db92dab2') in 0.027750 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Sprites/AppSettings/Icon/mipmap-xxhdpi/hm_icon.png
+  artifactKey: Guid(d058e7f9bd8fa6a40a3fe197a3bb67d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/AppSettings/Icon/mipmap-xxhdpi/hm_icon.png using Guid(d058e7f9bd8fa6a40a3fe197a3bb67d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cab0c584157466f04c5b7e3f3c0b7c0') in 0.023635 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Sprites/AppSettings/Icon/mipmap-mdpi/hm_icon.png
+  artifactKey: Guid(2181d6a979eb5ac4c9f17b9daa573655) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/AppSettings/Icon/mipmap-mdpi/hm_icon.png using Guid(2181d6a979eb5ac4c9f17b9daa573655) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '800a09825f216511fea4bd628c489e4f') in 0.019407 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/Sprites/AppSettings/Icon/mipmap-xhdpi/hm_icon.png
+  artifactKey: Guid(79797785abc3dc049bc0db39786467e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/AppSettings/Icon/mipmap-xhdpi/hm_icon.png using Guid(79797785abc3dc049bc0db39786467e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20e306ba52b0f57d9d21f7a5e0314469') in 0.024072 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/Sprites/AppSettings/Icon/mipmap-xxxhdpi/hm_icon.png
+  artifactKey: Guid(76a322fff2d7f294abd2c207a8f02d6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/AppSettings/Icon/mipmap-xxxhdpi/hm_icon.png using Guid(76a322fff2d7f294abd2c207a8f02d6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c3db73d23df1c7689834ac3a7f68174') in 0.023981 seconds 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 9.90 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 54 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 54 unused Assets / (188.7 KB). Loaded Objects now: 4741.
+Memory consumption went from 77.8 MB to 77.6 MB.
+Total: 6.606800 ms (FindLiveObjects: 0.366900 ms CreateObjectMapping: 0.266800 ms MarkObjects: 5.768900 ms  DeleteObjects: 0.202700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009015 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\Github\Unity-Projects\Memory Game (Hex)\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image D:\Github\Unity-Projects\Memory Game (Hex)\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 1.12 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.955 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1956ms)
+		BeginReloadAssembly (384ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (20ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (139ms)
+		EndReloadAssembly (1423ms)
+			LoadAssemblies (206ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (732ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (52ms)
+			SetupLoadedEditorAssemblies (468ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (80ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (89ms)
+				ProcessInitializeOnLoadAttributes (239ms)
+				ProcessInitializeOnLoadMethodAttributes (49ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.95 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4218 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 54 unused Assets / (191.8 KB). Loaded Objects now: 4743.
+Memory consumption went from 160.8 MB to 160.6 MB.
+Total: 7.465400 ms (FindLiveObjects: 0.382600 ms CreateObjectMapping: 0.250500 ms MarkObjects: 6.301200 ms  DeleteObjects: 0.529400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 10.72 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 54 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 54 unused Assets / (189.1 KB). Loaded Objects now: 4743.
+Memory consumption went from 77.4 MB to 77.2 MB.
+Total: 5.832100 ms (FindLiveObjects: 0.666400 ms CreateObjectMapping: 0.343400 ms MarkObjects: 4.629800 ms  DeleteObjects: 0.191200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
