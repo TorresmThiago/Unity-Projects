@@ -15,6 +15,8 @@ public class CardManager : MonoBehaviour
 
     public GameObject grid;
 
+    public LevelDificulty level;
+
     [SerializeField]
     private Card cardPrefab;
     private ColorLibrary colorLibrary;
@@ -29,7 +31,7 @@ public class CardManager : MonoBehaviour
     private void Start()
     {
         colorLibrary = new ColorLibrary();
-        colorList = colorLibrary.GetColorList();
+        colorList = colorLibrary.GetColorList(level);
         InstantiateCardGrid(colorList);
     }
 
